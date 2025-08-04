@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8">
+  <title>জাতীয় পরিচয়পত্র তথ্য</title>
+
+  <!-- বাংলা ফন্ট লোড -->
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Bengali&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+
+  <style>
+    body {
+      font-family: 'Noto Sans Bengali', sans-serif;
+    }
+  </style>
+</head>
+<body>
+  <div class="wrapper">
+    <div class="header">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/4/41/NIDW_Logo.png" alt="Logo" class="logo">
+      <div>
+        <h1>Bangladesh Election Commission</h1>
+        <h2>National Identity Registration Wing (NIDW)</h2>
+      </div>
+    </div>
+
+    <div class="form-box">
+      <input type="text" id="nid" placeholder="NID নম্বর">
+      <input type="date" id="dob" placeholder="জন্মতারিখ">
+      <button onclick="fetchData()">তথ্য দেখুন</button>
+    </div>
+
+    <div id="output" class="output hidden">
+      <div class="top-section">
+        <img id="photo" src="" alt="Photo" class="photo">
+        <div class="nid-info">
+          <h3 id="nameEn"></h3>
+          <h4 id="nameBn"></h4>
+          <p><strong>NID:</strong> <span id="nidNo"></span></p>
+          <div class="qr">
+            <img id="qrImage" src="" alt="QR Code" />
+          </div>
+        </div>
+      </div>
+
+      <div class="info-table">
+        <table>
+          <tr><td>জন্ম তারিখ</td><td id="dobText"></td></tr>
+          <tr><td>পিতার নাম</td><td id="father"></td></tr>
+          <tr><td>মাতার নাম</td><td id="mother"></td></tr>
+          <tr><td>ধর্ম</td><td id="religion"></td></tr>
+          <tr><td>লিঙ্গ</td><td id="gender"></td></tr>
+          <tr><td>বর্তমান ঠিকানা</td><td id="preAddr"></td></tr>
+          <tr><td>স্থায়ী ঠিকানা</td><td id="perAddr"></td></tr>
+        </table>
+      </div>
+
+      <button onclick="downloadPDF()">📄 রিপোর্ট ডাউনলোড করুন</button>
+    </div>
+  </div>
+
+  <!-- লাইব্রেরি -->
+  <script src="html2pdf.bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
