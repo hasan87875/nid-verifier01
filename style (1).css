@@ -1,0 +1,38 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #f5f7fa;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+.container {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background: white;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+form input, form button {
+  padding: 10px;
+  margin: 10px;
+  font-size: 16px;
+}
+form button {
+  background: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+.report {
+  margin-top: 30px;
+  text-align: left;
+}
+.hidden {
+  display: none;
+}
+#reportContent img {
+  max-width: 150px;
+}
+.qr {
+  margin-top: 10px;
+}
