@@ -1,0 +1,69 @@
+body {
+  font-family: 'Noto Sans Bengali', sans-serif;
+  background: #f2f2f2;
+  margin: 0;
+  padding: 0;
+}
+.wrapper {
+  max-width: 900px;
+  margin: 20px auto;
+  background: #fff;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+.header {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  border-bottom: 2px solid #ccc;
+  padding-bottom: 10px;
+}
+.logo {
+  width: 80px;
+}
+.form-box {
+  margin: 20px 0;
+  text-align: center;
+}
+.form-box input {
+  padding: 10px;
+  margin: 5px;
+  font-size: 16px;
+}
+.form-box button {
+  padding: 10px 20px;
+  background: green;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+.output {
+  margin-top: 20px;
+}
+.top-section {
+  display: flex;
+  gap: 20px;
+}
+.photo {
+  width: 150px;
+  height: auto;
+}
+.qr img {
+  margin-top: 10px;
+  width: 100px;
+}
+.info-table table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+.info-table td {
+  border: 1px solid #ccc;
+  padding: 8px;
+}
+button {
+  margin-top: 20px;
+}
+.hidden {
+  display: none;
+}
