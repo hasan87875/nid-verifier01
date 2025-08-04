@@ -34,3 +34,9 @@ function downloadPDF() {
   const element = document.getElementById('output');
   html2pdf().from(element).save("nid-report.pdf");
 }
+<!-- বাংলা ফন্ট লোড -->
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Bengali&display=swap" rel="stylesheet">
+
+<!-- আপনার script.js এর আগে নিচের লাইব্রেরি লোড করুন -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+<script src="script.js"></script>
